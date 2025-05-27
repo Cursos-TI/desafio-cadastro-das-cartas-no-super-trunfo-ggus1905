@@ -22,11 +22,11 @@ int main() {
     // Entrada dos dados da Carta 1
     printf("Cadastro da Carta 1:\n");
     printf("Digite o estado (A a H): ");
-    scanf(" %c", &estado1);
+    scanf(" %c", &estado1);  // espaço antes de %c para consumir espaços em branco
     
     printf("Digite o codigo da carta (ex: A01): ");
     scanf(" %3s", codigo1);
-    
+
     printf("Digite o nome da cidade: ");
     scanf(" %[^\n]", nomeCidade1); // Lê até a nova linha
 
@@ -46,22 +46,22 @@ int main() {
     printf("\nCadastro da Carta 2:\n");
     printf("Digite o estado (A a H): ");
     scanf(" %c", &estado2);
-    
+
     printf("Digite o codigo da carta (ex: B02): ");
     scanf(" %3s", codigo2);
-    
+
     printf("Digite o nome da cidade: ");
-    scanf(" %[^\n]", nomeCidade2); // Lê até a nova linha
-    
+    scanf(" %[^\n]", nomeCidade2);
+
     printf("Digite a populacao: ");
     scanf("%d", &populacao2);
-    
+
     printf("Digite a area (em km²): ");
     scanf("%f", &area2);
-    
+
     printf("Digite o PIB (em bilhões): ");
     scanf("%f", &pib2);
-    
+
     printf("Digite o numero de pontos turisticos: ");
     scanf("%d", &pontosTuristicos2);
 
@@ -86,3 +86,4 @@ int main() {
 
     return 0;
 }
+
